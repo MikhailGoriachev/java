@@ -1,0 +1,30 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12pt;
+	padding: 12px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

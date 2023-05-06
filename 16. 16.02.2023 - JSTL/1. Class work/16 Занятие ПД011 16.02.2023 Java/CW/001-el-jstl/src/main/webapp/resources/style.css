@@ -1,0 +1,10 @@
+body {
+    margin: 10px;
+    font-family: Verdana, serif;
+    font-size: 12pt;
+}
+
+.error-text {
+    font-weight: bold;
+    color: tomato;
+}

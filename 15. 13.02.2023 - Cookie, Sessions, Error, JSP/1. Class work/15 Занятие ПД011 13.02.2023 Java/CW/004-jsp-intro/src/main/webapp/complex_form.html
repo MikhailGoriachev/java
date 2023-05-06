@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP - Java Server Pages</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+<div><a href="index.jsp">на главную</a></div>
+<hr>
+
+
+    <h3>Сложная форма - скалярные и агрегатные данные</h3>
+    <form action="post_complex_form.jsp" method="POST">
+        Имя: <input name="username" />
+        <br><br>
+        Прл: <input type="radio" name="gender" value="женский" checked />Женский
+        <input type="radio" name="gender" value="мужской" />Мужской
+        <br><br>
+        Страна:
+        <select name="country">
+            <option>Иран</option>
+            <option>Турция</option>
+            <option>Китай</option>
+            <option>Германия</option>
+            <option>Франция</option>
+        </select>
+        <br><br>
+        Курсы:
+        <input type="checkbox" name="courses" value="JavaSE" checked />Java SE
+        <input type="checkbox" name="courses" value="JavaFX" checked />Java FX
+        <input type="checkbox" name="courses" value="JavaEE" checked />Java EE
+        <input type="checkbox" name="courses" value="Kotlin" checked />Kotlin
+        <br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>

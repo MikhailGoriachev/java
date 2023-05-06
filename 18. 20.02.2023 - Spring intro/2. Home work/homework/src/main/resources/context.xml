@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Чайник 1 -->
+    <bean id="kettle01" class="org.homework.app.models.Kettle">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="manufacture" value="Bosch"/>
+        <constructor-arg name="model" value="TWK7801"/>
+        <constructor-arg name="power" value="2200"/>
+        <constructor-arg name="heatingTime" value="180"/>
+        <constructor-arg name="temperatureHoldingTime" value="20"/>
+    </bean>
+    
+    <!-- Чайник 2 -->
+    <bean id="kettle02" class="org.homework.app.models.Kettle">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="manufacture" value="Philips"/>
+        <constructor-arg name="model" value="HD9350/90"/>
+        <constructor-arg name="power" value="2200"/>
+        <constructor-arg name="heatingTime" value="150"/>
+        <constructor-arg name="temperatureHoldingTime" value="25"/>
+    </bean>
+    
+    <!-- Чайник 3 -->
+    <bean id="kettle03" class="org.homework.app.models.Kettle">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="manufacture" value="Tefal"/>
+        <constructor-arg name="model" value="KI240D"/>
+        <constructor-arg name="power" value="2400"/>
+        <constructor-arg name="heatingTime" value="120"/>
+        <constructor-arg name="temperatureHoldingTime" value="15"/>
+    </bean>
+    
+    
+    <!-- Тренировка 1 -->
+    <bean id="workout01" class="org.homework.app.models.Workout">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="dateTimeBegin" value="2023-02-16 18:30:00"/>
+        <constructor-arg name="dateTimeEnd" value="2023-02-16 20:00:00"/>
+        <constructor-arg name="trainer" value="Иванов А.П."/>
+        <constructor-arg name="isSpecialInventory" value="true"/>
+        <constructor-arg name="isSpecialRoom" value="false"/>
+    </bean>
+    
+    <!-- Тренировка 2 -->
+    <bean id="workout02" class="org.homework.app.models.Workout">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="dateTimeBegin" value="2023-02-17 10:00:00"/>
+        <constructor-arg name="dateTimeEnd" value="2023-02-17 11:00:00"/>
+        <constructor-arg name="trainer" value="Петрова Е.А."/>
+        <constructor-arg name="isSpecialInventory" value="false"/>
+        <constructor-arg name="isSpecialRoom" value="true"/>
+    </bean>
+    
+    
+    <!-- Книга 1 -->
+    <bean name="book01" class="org.homework.app.models.Book">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="format" value="EPUB"/>
+        <constructor-arg name="author" value="Джон Роулинг"/>
+        <constructor-arg name="title" value="Гарри Поттер и философский камень"/>
+        <constructor-arg name="size" value="1234567"/>
+        <constructor-arg name="pubYear" value="1997"/>
+    </bean>
+    
+    <!-- Книга 2 -->
+    <bean name="book02" class="org.homework.app.models.Book">
+        <constructor-arg name="id" value="2"/>
+        <constructor-arg name="format" value="PDF"/>
+        <constructor-arg name="author" value="Эрих Мария Ремарк"/>
+        <constructor-arg name="title" value="Три товарища"/>
+        <constructor-arg name="size" value="2345678"/>
+        <constructor-arg name="pubYear" value="1936 "/>
+    </bean>
+    
+    <!-- Книга 3 -->
+    <bean name="book03" class="org.homework.app.models.Book">
+        <constructor-arg name="id" value="3"/>
+        <constructor-arg name="format" value="FB2"/>
+        <constructor-arg name="author" value="Михаил Булгаков"/>
+        <constructor-arg name="title" value="Мастер и Маргарита"/>
+        <constructor-arg name="size" value="3456789"/>
+        <constructor-arg name="pubYear" value="1967"/>
+    </bean>
+    
+</beans>

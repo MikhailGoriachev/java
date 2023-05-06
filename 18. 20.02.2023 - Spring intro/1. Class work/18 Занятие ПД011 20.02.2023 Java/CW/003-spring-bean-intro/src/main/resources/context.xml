@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- первый студент -->
+    <bean id="student1" class="org.itstep.pd011.models.Student">
+        <constructor-arg name="surname" value="Ли"/>
+        <constructor-arg name="name" value="Чжен"/>
+        <constructor-arg name="patronymic" value="Ли"/>
+        <constructor-arg name="birthYear" value="1998"/>
+        <constructor-arg name="city" value="Донецк"/>
+        <constructor-arg name="group" value="ПД-221"/>
+    </bean>
+
+    <!-- второй студент -->
+    <bean id="student2" class="org.itstep.pd011.models.Student">
+        <constructor-arg name="surname" value="Валентинова" />
+        <constructor-arg name="name" value="Валентина" />
+        <constructor-arg name="patronymic" value="Валентиновна" />
+        <constructor-arg name="birthYear" value="1999" />
+        <constructor-arg name="city" value="Луганское" />
+        <constructor-arg name="group" value="ДУ911" />
+    </bean>
+
+    <!-- Первый автобус -->
+    <bean id="bus1" class="org.itstep.pd011.models.Bus">
+        <constructor-arg name="marka" value="42а"/>
+        <constructor-arg name="driver" value="Баранкин Т.Д."/>
+        <constructor-arg name="regNumber" value="РР010Р" />
+        <constructor-arg name="fuel" value="87"/>
+    </bean>
+
+    <!-- Второй автобус -->
+    <bean id="bus2" class="org.itstep.pd011.models.Bus">
+        <constructor-arg name="marka" value="35"/>
+        <constructor-arg name="driver" value="Остановкина О.В."/>
+        <constructor-arg name="regNumber" value="РВ020В" />
+        <constructor-arg name="fuel" value="62"/>
+    </bean>
+</beans>

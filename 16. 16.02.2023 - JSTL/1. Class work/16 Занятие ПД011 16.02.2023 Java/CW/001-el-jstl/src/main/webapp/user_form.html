@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.jsp">На главную</a>
+    </nav>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- форму будет обрабатывать JSP-страница -->
+    <form action="el_param.jsp" method="post">
+        <!-- скалярный параметр формы -->
+        Пользователь: <input name="name" />
+        <br><br>
+        <!-- номераа телефонов образуют массив - агрегатный параметр формы -->
+        Основной телефон: <input name="phone" />
+        <br></br>
+        Официальный телефон: <input name="phone" />
+        <br></br>
+        Семейный телефон: <input name="phone" />
+        <br></br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>

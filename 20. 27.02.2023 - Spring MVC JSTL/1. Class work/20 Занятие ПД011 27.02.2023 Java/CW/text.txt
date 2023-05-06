@@ -1,0 +1,23 @@
+3. XML Configuration
+If we need to go the old fashion way with XML-based configuration, we can make good 
+use of the mvc:resources element to point to the location of resources with a specific 
+public URL pattern.
+
+For example, the following line will serve all requests for resources coming 
+in with a public URL pattern, like “/resources/**”, by searching in the “/resources/” 
+directory under the root folder in our application:
+
+<mvc:resources mapping="/resources/**" location="/resources/" />
+
+Now we can access a CSS file like in the following HTML page:
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <link href="<c:url value="/resources/myCss.css" />" rel="stylesheet">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Hello world!</h1>
+</body>
+</html>

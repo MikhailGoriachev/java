@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSP - Java Server Pages</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+    <div><a href="index.jsp">на главную</a></div>
+    <hr>
+
+    <h3>Форма ввода данных пользователя, обработка - get_request_param.jsp</h3>
+
+    <!-- передача парамтеров из формы методом get -->
+    <form action="get_request_param.jsp">
+        Имя: <input name="name" />
+        <br><br>
+        Возраст: <input name="age" type="number" min=1 />
+        <br></br>
+        Оклад: <input name="salary" type="number" mni="1">
+        <br><br>
+        Город: <input name="city" />
+        <br><br>
+        <input type="submit" value="Отправить" />
+    </form>
+</body>
+</html>

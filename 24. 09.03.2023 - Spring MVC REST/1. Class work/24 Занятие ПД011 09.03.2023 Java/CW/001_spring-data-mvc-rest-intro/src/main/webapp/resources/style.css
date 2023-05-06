@@ -1,0 +1,41 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 12pt;
+	padding: 12px;
+}
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="submit"] {
+    font-family: Tahoma, sans-serif;
+    font-size: 12pt;
+    margin-top: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 140px;
+    padding: 3px 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 35%;
+    alignment: center;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

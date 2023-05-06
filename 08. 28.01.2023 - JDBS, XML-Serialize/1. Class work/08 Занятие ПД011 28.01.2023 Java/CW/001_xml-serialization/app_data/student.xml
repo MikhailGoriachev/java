@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="19.0.1" class="java.beans.XMLDecoder">
+ <object class="org.itstep.pd011.Student">
+  <void property="id">
+   <int>555777</int>
+  </void>
+  <void property="name">
+   <string>Иванов Т.Л.</string>
+  </void>
+  <void property="password">
+   <string>VKL_1410</string>
+  </void>
+ </object>
+</java>
